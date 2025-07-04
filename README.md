@@ -22,6 +22,9 @@ A retro-style 3D survival shooter featuring hybrid cylinder collision and billbo
 - **Rounded Billboard**
 - **Cylinder Collider**
 - **Directional Light**
+- **More precise physical updates**
+- **Controller Possessed Character**
+- **Simulate forward motion and resistance using AddImpulse and AddForce**
 
 ### 🎮 Game Modes
 - Survival
