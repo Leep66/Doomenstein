@@ -1,0 +1,91 @@
+<Definitions>
+  <!-- Pistol -->
+  <WeaponDefinition name="Pistol" refireTime="0.75" rayCount="1" rayCone="0.0" rayRange="40.0" rayDamage="10.0~15.0" rayImpulse="4.0" recoilYaw="-10.0~10.0" recoilPitch="10.0~20.0" recoilDamping="10.0" reloadDuration="1.0" capacity="7">
+    <HUD shader="Default" baseTexture="Data/Images/Hud_Base.png" reticleTexture="Data/Images/PistolReticle.png" reticleSize="16,16" spriteSize="256,256" spritePivot="0.5,0.0" iconTexture="Data/Images/PistolIcon.png">
+      <Animation name="Idle" shader="Default" spriteSheet="Data/Images/Weapon_Pistol.png" cellCount="5,1" secondsPerFrame="0.1" startFrame="0" endFrame="0"/>
+      <Animation name="Attack" shader="Default" spriteSheet="Data/Images/Weapon_Pistol.png" cellCount="5,1" secondsPerFrame="0.1" startFrame="1" endFrame="3" />
+    </HUD>
+    <Sounds>
+      <Sound sound="Fire" name="Data/Audio/PistolFire.wav"/>
+    </Sounds>
+  </WeaponDefinition>
+  <!-- Plasma Rifle -->
+  <WeaponDefinition name="PlasmaRifle" refireTime="0.1" projectileCount="1" projectileActor="PlasmaProjectile" projectileCone="4.0" projectileSpeed="8.0" recoilYaw="-7.5~7.5" recoilPitch="2.0~5.0" recoilDamping="15.0" reloadDuration="2.0" capacity="50">
+    <HUD shader="Default" baseTexture="Data/Images/Hud_Base.png" reticleTexture="Data/Images/PlasmaReticle.png" reticleSize="32,32" spriteSize="256,256" spritePivot="0.5,0.0" iconTexture="Data/Images/PlasmaIcon.png">
+      <Animation name="Idle" shader="Default" spriteSheet="Data/Images/Weapon_Plasma.png" cellCount="4,1" secondsPerFrame="0.125" startFrame="0" endFrame="0" />
+      <Animation name="Attack" shader="Default" spriteSheet="Data/Images/Weapon_Plasma.png" cellCount="4,1" secondsPerFrame="0.125" startFrame="1" endFrame="2" />
+    </HUD>
+    <Sounds>
+      <Sound sound="Fire" name="Data/Audio/PlasmaFire.wav"/>
+    </Sounds>
+  </WeaponDefinition>
+  <!-- Demon Melee -->
+  <WeaponDefinition name="DemonMelee" refireTime="2.0" meleeCount="1" meleeArc="180.0" meleeRange="0.75" meleeDamage="2.0~4.0" meleeImpulse="2.0">
+    <Sounds>
+      <Sound sound="Fire" name="Data/Audio/DemonAttack.wav"/>
+    </Sounds>
+  </WeaponDefinition>
+	<!-- Shotgun -->
+	<WeaponDefinition name="Shotgun" refireTime="1.0" rayCount="5" rayCone="20.0" rayRange="3.0" rayDamage="10.0~15.0" rayImpulse="5.0" recoilYaw="-20.0~20.0" recoilPitch="80.0~120.0" recoilDamping="20.0" reloadDuration="2.0" capacity="5">
+		<HUD shader="Default" baseTexture="Data/Images/Hud_Base.png" reticleTexture="Data/Images/ShotgunReticle.png" reticleSize="128,16" spriteSize="256,256" spritePivot="0.5,0.0" iconTexture="Data/Images/ShotgunIcon.png">
+			<Animation name="Idle" shader="Default" spriteSheet="Data/Images/Weapon_Shotgun.png" cellCount="4,1" secondsPerFrame="0.15" startFrame="0" endFrame="0"/>
+			<Animation name="Attack" shader="Default" spriteSheet="Data/Images/Weapon_Shotgun.png" cellCount="4,1" secondsPerFrame="0.15" startFrame="1" endFrame="3" />
+		</HUD>
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/ShotgunFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+	<!-- Hook -->
+	<WeaponDefinition name="Hook" refireTime="0.5" projectileCount="1" projectileActor="HookProjectile" projectileCone="0.0" projectileSpeed="20.0" capacity="-1">
+		<HUD shader="Default" baseTexture="Data/Images/Hud_Base.png" reticleTexture="Data/Images/HookReticle.png" reticleSize="16,16" spriteSize="256,256" spritePivot="0.5,0.5" iconTexture="Data/Images/HookIcon.png">
+			<Animation name="Idle" shader="Default" spriteSheet="Data/Images/Weapon_Hook.png" cellCount="4,1" secondsPerFrame="0.1" startFrame="0" endFrame="0"/>
+			<Animation name="Attack" shader="Default" spriteSheet="Data/Images/Weapon_Hook.png" cellCount="4,1" secondsPerFrame="0.1" startFrame="1" endFrame="3" />
+		</HUD>
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/HookFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+	<!-- Freeze Rifle -->
+	<WeaponDefinition name="FreezeRifle" refireTime="0.5" projectileCount="1" projectileActor="FreezeProjectile" projectileCone="4.0" projectileSpeed="3.5" ecoilYaw="-7.5~7.5" recoilPitch="2.0~5.0" recoilDamping="15.0" reloadDuration="2.0" capacity="25">
+		<HUD shader="Default" baseTexture="Data/Images/Hud_Base.png" reticleTexture="Data/Images/PlasmaReticle.png" reticleSize="32,32" spriteSize="256,256" spritePivot="0.5,0.5" iconTexture="Data/Images/FreezeIcon.png">
+			<Animation name="Idle" shader="Default" spriteSheet="Data/Images/Weapon_Freeze.png" cellCount="4,1" secondsPerFrame="0.1" startFrame="0" endFrame="0"/>
+			<Animation name="Attack" shader="Default" spriteSheet="Data/Images/Weapon_Freeze.png" cellCount="4,1" secondsPerFrame="0.1" startFrame="1" endFrame="3" />
+		</HUD>
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/FreezeFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+	
+	
+	<!-- Demon Rifle -->
+	<WeaponDefinition name="DemonRifle" refireTime="0.3" projectileCount="1" projectileActor="DemonFire" projectileCone="15.0" projectileSpeed="4.0" capacity="-1">
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/PlasmaFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+	<!-- Demon Shotgun -->
+	<WeaponDefinition name="DemonShotgun" refireTime="1.0" projectileCount="10" projectileActor="DemonFire" projectileCone="45.0" projectileSpeed="4.0" capacity="-1">
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/PlasmaFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+	<!-- Freeze Demon Rifle -->
+	<WeaponDefinition name="FreezeDemonRifle" refireTime="1.0" projectileCount="1" projectileActor="FreezeProjectile" projectileCone="4.0" projectileSpeed="3.5" capacity="-1">
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/FreezeFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+	<!-- Demon Hook -->
+	<WeaponDefinition name="DemonHook" refireTime="0.1" projectileCount="1" projectileActor="HookProjectile" projectileCone="0.0" projectileSpeed="10" capacity="-1">
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/HookFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+
+	<!-- Demon Blast -->
+	<WeaponDefinition name="DemonBlast" blastRange="2.0" blastDamage="5.0~10.0">
+		<Sounds>
+			<Sound sound="Fire" name="Data/Audio/BlastFire.wav"/>
+		</Sounds>
+	</WeaponDefinition>
+</Definitions>
